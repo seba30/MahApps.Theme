@@ -1,17 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Diagnostics;
 
 namespace MahApps_20
 {
-	/// <summary>
-	/// Interaktionslogik für "App.xaml"
-	/// </summary>
-	public partial class App : Application
+	public partial class App
 	{
+		public App()
+		{
+			PresentationTraceSources.DataBindingSource.Listeners.Add(new Tracer());
+		}
+
+		private class Tracer : TraceListener
+		{
+			public override void Write(string message)
+			{
+				Debugger.Break();
+			}
+
+			public override void WriteLine(string message)
+			{
+				Debugger.Break();
+			}
+		}
 	}
 }

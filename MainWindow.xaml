@@ -19,6 +19,8 @@
 			<RowDefinition Height="Auto" />
 			<RowDefinition Height="Auto" />
 			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
 			<RowDefinition Height="*" />
 		</Grid.RowDefinitions>
 
@@ -33,6 +35,12 @@
 		<Button Grid.Column="0" Grid.Row="1" Content="Button" />
 		<mah:ToggleSwitch Grid.Column="1" Grid.Row="2" Header="Header" OnContent="On" OffContent="Off" IsOn="True" />
 		<ToggleButton Grid.Column="0" Grid.Row="3" Content="Toggle" Style="{StaticResource MahApps.Styles.ToggleButton}" />
+		
+		<TextBlock Grid.Column="0" Grid.Row="4" VerticalAlignment="Center" Text="MahApps:" />
+		<mah:DateTimePicker Grid.Column="1" Grid.Row="4" />
+
+		<TextBlock Grid.Column="0" Grid.Row="5" VerticalAlignment="Center" Text="Default:" />
+		<DatePicker Grid.Column="1" Grid.Row="5" />
 
 	</Grid>
 </mah:MetroWindow>
