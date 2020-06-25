@@ -12,9 +12,11 @@
 		<Grid.ColumnDefinitions>
 			<ColumnDefinition Width="200" />
 			<ColumnDefinition Width="Auto" />
+			<ColumnDefinition Width="Auto" />
 			<ColumnDefinition Width="*" />
 		</Grid.ColumnDefinitions>
 		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
 			<RowDefinition Height="Auto" />
 			<RowDefinition Height="Auto" />
 			<RowDefinition Height="Auto" />
@@ -35,12 +37,18 @@
 		<Button Grid.Column="0" Grid.Row="1" Content="Button" />
 		<mah:ToggleSwitch Grid.Column="1" Grid.Row="2" Header="Header" OnContent="On" OffContent="Off" IsOn="True" />
 		<ToggleButton Grid.Column="0" Grid.Row="3" Content="Toggle" Style="{StaticResource MahApps.Styles.ToggleButton}" />
-		
-		<TextBlock Grid.Column="0" Grid.Row="4" VerticalAlignment="Center" Text="MahApps:" />
-		<mah:DateTimePicker Grid.Column="1" Grid.Row="4" />
 
-		<TextBlock Grid.Column="0" Grid.Row="5" VerticalAlignment="Center" Text="Default:" />
-		<DatePicker Grid.Column="1" Grid.Row="5" />
+		<RadioButton Grid.Column="1" Grid.Row="3" Content="RadioButton" Style="{StaticResource MahApps.Styles.RadioButton}" />
+		<RadioButton Grid.Column="2" Grid.Row="3" Content="RadioButton" Style="{StaticResource MahApps.Styles.RadioButton.Win10}" />
+		
+		<CheckBox Grid.Column="1" Grid.Row="4" Content="CheckBox" Style="{StaticResource MahApps.Styles.CheckBox}" />
+		<CheckBox Grid.Column="2" Grid.Row="4" Content="CheckBox" Style="{StaticResource MahApps.Styles.CheckBox.Win10}" />
+
+		<TextBlock Grid.Column="0" Grid.Row="5" VerticalAlignment="Center" Text="MahApps:" />
+		<mah:DateTimePicker Grid.Column="1" Grid.Row="5" />
+
+		<TextBlock Grid.Column="0" Grid.Row="6" VerticalAlignment="Center" Text="Default:" />
+		<DatePicker Grid.Column="1" Grid.Row="6" />
 
 	</Grid>
 </mah:MetroWindow>
