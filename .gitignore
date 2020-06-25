@@ -1,0 +1,6 @@
+packages/
+.vs/
+bin/
+obj/
+MahApps_20.sln
+_ReSharper.Caches/
