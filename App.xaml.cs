@@ -1,4 +1,10 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
+using System.Windows;
+
+using ControlzEx.Theming;
+
+using MahApps.Metro.Theming;
 
 namespace MahApps_20
 {
@@ -7,6 +13,15 @@ namespace MahApps_20
 		public App()
 		{
 			PresentationTraceSources.DataBindingSource.Listeners.Add(new Tracer());
+		}
+
+		protected override void OnStartup(StartupEventArgs e)
+		{
+			//var theme = ThemeManager.Current.AddLibraryTheme(new LibraryTheme(new Uri("pack://application:,,,/MahApps_20;component/AccentColor.xaml"), MahAppsLibraryThemeProvider.DefaultInstance));
+
+			//ThemeManager.Current.ChangeTheme(this, theme);
+
+			base.OnStartup(e);
 		}
 
 		private class Tracer : TraceListener

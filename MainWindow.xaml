@@ -8,6 +8,14 @@
 	mc:Ignorable="d"
 	Title="MainWindow" Height="450" Width="800">
 
+	<mah:MetroWindow.Flyouts>
+		<mah:FlyoutsControl>
+			<mah:Flyout Header="Test" Theme="Accent" IsOpen="True">
+				Bla Bla
+			</mah:Flyout>
+		</mah:FlyoutsControl>
+	</mah:MetroWindow.Flyouts>
+
 	<Grid>
 		<Grid.ColumnDefinitions>
 			<ColumnDefinition Width="200" />
@@ -40,7 +48,7 @@
 
 		<RadioButton Grid.Column="1" Grid.Row="3" Content="RadioButton" Style="{StaticResource MahApps.Styles.RadioButton}" />
 		<RadioButton Grid.Column="2" Grid.Row="3" Content="RadioButton" Style="{StaticResource MahApps.Styles.RadioButton.Win10}" />
-		
+
 		<CheckBox Grid.Column="1" Grid.Row="4" Content="CheckBox" Style="{StaticResource MahApps.Styles.CheckBox}" />
 		<CheckBox Grid.Column="2" Grid.Row="4" Content="CheckBox" Style="{StaticResource MahApps.Styles.CheckBox.Win10}" />
 
